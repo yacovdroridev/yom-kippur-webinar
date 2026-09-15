@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8ead1">
+  <meta name="description" content="מה הנשמה שלך רוצה להתפלל? ערב מיוחד לקראת יום הכיפורים - להתחבר לעצמך, לתפילות ולקשר שלך עם ה'.">
+  <title>מה הנשמה שלך רוצה להתפלל?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="sun"></div>
+    <div class="petals" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">ערב מיוחד לקראת יום הכיפורים</span>
+        <h1>מה הנשמה שלך<br><em>רוצה להתפלל?</em></h1>
+        <div class="heart-line"><span></span>♡<span></span></div>
+        <p class="lead">להתחבר לעצמך, לתפילות<br>ולקשר שלך עם ה׳</p>
+        <div class="notice">הזמן והקישור לוובינר יפורסמו בקבוצת הווצאפ</div>
+        <a class="cta" href="#registration">אני רוצה להצטרף <span>←</span></a>
+      </div>
+      <figure class="flyer-frame">
+        <img src="assets/flyer.jpg" alt="הזמנה לערב מה הנשמה שלך רוצה להתפלל">
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section class="why">
+      <div class="wrap">
+        <p class="section-kicker">מרחב של התבוננות וחיבור</p>
+        <h2>לקראת יום הכיפורים</h2>
+        <div class="cards">
+          <article><span class="icon">❧</span><h3>להעמיק</h3><p>את החיבור הרוחני</p></article>
+          <article><span class="icon">♡</span><h3>להבין</h3><p>מה באמת חשוב לי</p></article>
+          <article><span class="icon">☀</span><h3>להגיע</h3><p>ליום כיפור עם לב פתוח ונשמה מוכנה</p></article>
+          <article><span class="icon">▤</span><h3>לגלות</h3><p>משמעויות חדשות לתפילות של המחזור</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration" id="registration">
+      <div class="wrap registration-grid">
+        <div class="form-intro">
+          <p class="section-kicker">הצטרפו אלינו</p>
+          <h2>נשמח לפגוש אתכם</h2>
+          <p>השאירו פרטים ונצרף אתכם לקבוצת הווצאפ השקטה. בקבוצה נפרסם את מועד המפגש ונשלח את הקישור לוובינר.</p>
+          <ul>
+            <li>תזכורת לפני תחילת הוובינר</li>
+            <li>הקישור הישיר למפגש</li>
+            <li>הודעות שקשורות לערב בלבד</li>
+          </ul>
+        </div>
+
+        <form class="form-card" id="registration-form" method="POST" action="FORM_ENDPOINT_PLACEHOLDER">
+          <input type="hidden" name="source" value="דף נחיתה - מה הנשמה שלך רוצה להתפלל">
+          <input type="hidden" name="_subject" value="הרשמה חדשה לוובינר יום כיפור">
+          <label>שם מלא
+            <input name="name" autocomplete="name" required placeholder="איך קוראים לך?">
+          </label>
+          <label>כתובת מייל
+            <input type="email" name="email" autocomplete="email" required inputmode="email" placeholder="name@example.com">
+          </label>
+          <label>מספר טלפון
+            <input type="tel" name="phone" autocomplete="tel" required inputmode="tel" dir="ltr" placeholder="050-0000000" pattern="[+0-9() -]{9,20}">
+          </label>
+          <label class="consent"><input type="checkbox" name="consent" value="כן" required><span>אני מאשר/ת לצרף אותי לקבוצת הווצאפ ולקבל הודעות הקשורות לוובינר.</span></label>
+          <button type="submit">מצטרפים לקבוצה <span>←</span></button>
+          <p class="privacy">הפרטים ישמשו לעדכונים על הוובינר בלבד.</p>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>תפילה · חיבור · שינוי</p><small>בואי תפילתי</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
